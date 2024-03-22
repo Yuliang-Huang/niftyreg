@@ -1231,7 +1231,7 @@ void reg_cubic_spline_getDeformationField3D(nifti_image *splineControlPoint,
 #endif // _USE_SSE
 
       // Assess if lookup table can be used
-      if(gridVoxelSpacing[0]==5. && gridVoxelSpacing[0]==5. && gridVoxelSpacing[0]==5. && force_no_lut==false){
+      if(gridVoxelSpacing[0]==5. && gridVoxelSpacing[1]==5. && gridVoxelSpacing[2]==5. && force_no_lut==false){
 
           // Assign a single array that will contain all coefficients
          DTYPE *coefficients = (DTYPE *)malloc(125*64*sizeof(DTYPE));
